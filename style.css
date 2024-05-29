@@ -1,22 +1,31 @@
+:root{
+    --azulDnc: #0C70F2;
+    --pretoDnc: #303030;
+    --cinzaHover: #C9C9C9;
+
+    --fontePadrao: 'Inter';
+}
 body{
     margin: 0px; /*Margem Externa*/
     padding: 0px; /* Margem Interna */
-    font-family: 'inter';
+    font-family: var(--fontePadrao);
+    background: linear-gradient(rgba(12, 112, 242, 0.5),rgba(12, 112, 242, 0));
+    background-color: var(--pretoDnc)
 }
-#principal{
+#menuPrincipal{
     width: 100%;
     height: 100px;
-    background-color: rgba(48, 48, 48, 1);
+    background-color:var(--pretoDnc);
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #bababa;
 }
-    #principal div a:hover{
-        color: #cccccc;
+    #menuPrincipal div a:hover{
+        color: var(--cinzaHover);
     }
 
-#principal div a{
+#menuPrincipal div a{
     font-size: 20px;
     font-weight: 600;
     color: white;
@@ -30,9 +39,9 @@ body{
     align-items: center;
     margin-left: 5%;
     }
-#principal button{
+#menuPrincipal button{
     margin-right: 5%;
-    background-color: rgba(12, 112, 242, 1);
+    background-color: var(--azulDnc);
     border: 0px;
 
     width: 80px;
@@ -45,29 +54,91 @@ body{
     box-shadow: 3px 2px 4px 0px rgba(12, 112, 242, 0.25);
     cursor: pointer;
 }
-#formulario {
-    background: linear-gradient(rgba(12, 112, 242, 0.5),rgba(12, 112, 242, 0));
-    background-color: rgba(48, 48, 48, 1);
-    color: white;
-    margin-top: 0px;
+
+/* Seção Principal do site */
+section{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-#formulario h1 {
-    text-align: center;
-    font-family: Inter;
+header{
+    color: white;
+    font-family: var(--fontePadrao);
+}
+header h1{
+    margin: 0px;
     font-size: 80px;
     font-weight: 800;
     line-height: 96.82px;
-    margin: 0px;
-
+    text-align: center;
+    margin-bottom: 25px;
 }
-#formulario p {
-    margin-top: 30px;
+header h2{
     font-size: 40px;
     font-weight: 500;
     line-height: 48.41px;
     text-align: center;
+    margin-bottom: 100px;
 }
+header .invert{
+    background-color: rgba(31, 31, 31, 1);
+    font-weight: bold;
+}
+
+/*Formulário*/
+form{
+    color: white;
+    font-family: var(--fontePadrao);
+    font-size: 25px;
+    font-weight: 600;
+    width: 500px;
+}
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form input{
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: 0px;
+    height: 30px;
+}
+form label{
+    margin: 10px 0px 10px 0px;
+}
+form input::placeholder{
+    color: rgba(57, 57, 57, 0.5);
+}
+.checkboxItens label{
+    font-size: 20px;
+}
+.checkboxItens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+input[type="checkbox"]{
+    transform: scale(1.7);
+}
+input[type="submit"]{
+    background-color: rgba(12, 112, 242, 0.9);
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 50px;
+    box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+    cursor: pointer;
+}
+
+
 #rodape{
     background: rgba(12, 112, 242, 1);
     display: flex;

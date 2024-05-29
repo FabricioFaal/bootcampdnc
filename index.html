@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 <body>
     <!--Menu Superior-->
-    <nav id="principal">
+    <nav id="menuPrincipal">
         <div id="menu">
             <a href="">Home</a>
             <a href="">Ultimas Edições</a>
@@ -19,13 +19,66 @@
         <button id="button">Login</button>
     </nav>
     <!--Formulário-->
-    <div id="formulario">
-        <h1>BOOTCAMP DNC</h1>
-        <p>Esse será um evento exclusivo para todos os alunos <br>
-            da DNC, que querem acelerar a carreira com uma <br>
-            semana intensiva de conteúdo de mercado entre <br>
-            BACK-END, FRONT-END & BANCO DE DADOS.</p>
-    </div>
+    <section>
+
+        <header>
+            <h1>BOOTCAMP DNC</h1>
+            <h2>
+                Esse será um evento exclusivo para todos os alunos <br>
+                da <b>DNC</b>, que querem <span class="invert">acelerar a carreira</span> com uma <br>
+                semana intensiva de conteúdo de mercado entre <br>
+                <span class="invert">BACK-END, FRONT-END & BANCO DE DADOS.</span>
+            </h2>
+        </header>
+
+        <form>
+
+            <div class="formGroup">
+                <label for="">Nome:</label>
+                <input type="text" placeholder="Insira seu nome aqui">
+            </div>
+
+            <div class="formGroup">
+                <label for="">Sobrenome:</label>
+                <input type="text" placeholder="Insira seu sobrenome aqui">
+            </div>
+
+            <div class="formGroup">
+                <label for="">Área de Interesse:</label>
+                <div class="checkboxItens">
+                    <input type="checkbox" value="front">
+                    <label>Front-End</label>
+
+                    <input type="checkbox" value="back">
+                    <label>Back-End</label>
+
+                    <input type="checkbox" value="bancodedados">
+                    <label>Banco de Dados</label>
+                </div>
+            </div>
+
+            <div class="formGroup">
+                <label for="">E-mail:</label>
+                <input type="email" placeholder="Insira seu e-mail aqui">
+            </div>
+
+            <div class="formGroup">
+                <label for="">Telefone:</label>
+                <input type="text" placeholder="(99) 9999-9999">
+            </div>
+
+            <div class="formGroup">
+                <label for="">Insira uma frase criativa aqui:</label>
+                <input type="text" placeholder="Qual frase criativa você gostaria de falar? :)">
+            </div>
+
+            <input type="submit" value="Cadastrar">
+
+        </form>
+
+    </section>
+
+
     <div id="rodape">
         <div id="escolas">
             Escolas<br>
