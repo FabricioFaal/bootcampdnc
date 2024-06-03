@@ -9,7 +9,7 @@ body{
     margin: 0px; /*Margem Externa*/
     padding: 0px; /* Margem Interna */
     font-family: var(--fontePadrao);
-    background: linear-gradient(rgba(12, 112, 242, 0.5),rgba(12, 112, 242, 0));
+    background: linear-gradient(rgba(12, 112, 242, 0.5) 34%, rgba(12, 112, 242, 0) 40%);
     background-color: var(--pretoDnc)
 }
 #menuPrincipal{
@@ -80,7 +80,7 @@ header h2{
     font-weight: 500;
     line-height: 48.41px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 header .invert{
     background-color: rgba(31, 31, 31, 1);
@@ -138,24 +138,87 @@ input[type="submit"]{
     cursor: pointer;
 }
 
+/*Footer*/
 
-#rodape{
-    background: rgba(12, 112, 242, 1);
+footer{
+    width: 100%;
+    background-color: var(--azulDnc)
+}
+footer .linha1{
     display: flex;
     justify-content: space-around;
-    text-align: center;
+    align-items: center;
 }
-
-#rodape div a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30.26px;
+footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+}
+footer h5{
     text-align: center;
     color: white;
+    font-weight: 800;
+    font-size: 20px;
+    background-color: var(--pretoDnc);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+ }
+footer ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+footer ul li{
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 15px 0px 15px 0px;
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+footer .endereço{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    width: 30%;
+}
+footer ul li a:hover{
+    color: var(--cinzaHover);
+}
+footer .linha2{
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+
+}
+footer .linha2 a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+footer .linha2 a:first-child{
+    border-right: 3px solid white;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+footer .linha2 a:hover{
+    color: var(--cinzaHover);
 }
 
-#rodape div a:hover{
-    color: #cccccc;
-}
+/*Footer*/
 
+footer .linha1{
+    flex-direction: column;
+}
+footer .endereço{
+    width: 90%;
+    margin-bottom: 20px;
+}
